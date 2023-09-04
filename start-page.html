@@ -13,6 +13,63 @@
   <title>Netflix - Watch Tv Shows Online, Watch Movies Online</title>
 </head>
 <body>
+  <header>
+    <nav>
+      <img src="assets/netflix.svg" alt="Netflix logo">
+      <div class="nav-btn-wrapper">
+        <img src="assets/internet.png" alt="internet">
+        <button id="btn-language">English</button>
+        <i class="bx bxs-down-arrow"></i>
+        <select name="language" id="language" onchange="location.href=this.value">
+          <option value="https://MikeAdelek.github.io/netflix-start-page/">English</option>
+          <option value="https://MikeAdelek.github.io/netflix-start-page/">Português</option>
+        </select>
+        <button class="signin-btn">Sign In</button>
+      </div>
+    </nav>
+    <article class="header-content">
+      <h1>Unlimited movies, Tv shows, and more.</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="user-input">
+        <input autocomplete="email" type="text" name="user-email" class="user-email" id="input-email" required>
+        <label for="input-email" class="email-label">Email address</label>
+        <button class="started-btn">Get Started</button>
+      </div>
+    </article>
+  </header>
+  <div class="line"></div>
+  <section class="netflix-showcase">
+    <article class="section-content">
+      <h1>Enjoy on your TV.</h1>
+      <h2 id="first-section-description">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
+    </article>
+    <aside class="first-animation-wrapper">
+      <img src="assets/tv.png" alt="TV image">
+      <video src="assets/video-tv-0819.m4v" type="video/mp4" autoplay loop muted></video>
+    </aside>
+  </section>
+  <div class="line"></div>
+  <section class="netflix-showcase reverse">
+    <aside class="second-animation-wrapper">
+      <img class="background-img" src="assets/mobile-0819.jpg" alt="cell phone image">
+      <div class="stranger-things-card">
+        <div class="stranger-things-inner-card">
+          <img class="banner-img" src="assets/boxshot.png" alt="stranger things card">
+          <div class="stranger-things-txt">
+            <p>Stranger Things</p>
+            <p>Downloading...</p>
+          </div>
+        </div>
+        <img class="download-img" src="assets/download-icon.gif" alt="">
+      </div> 
+    </aside>
+    <article class="section-content" id="stranger-things-content">
+      <h1>Download your shows to watch offline.</h1>
+      <h2>Save your favorites easily and always have something to watch.</h2>
+    </article>
+  </section>
+  
   
   <script src="script.js"></script>
 </body>
